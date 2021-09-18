@@ -24,6 +24,14 @@ a:hover {
   color: #28bdbc;
 }
 
+.text-pink {
+  color: #e973f5 !important;
+}
+
+.text-lightblue {
+  color: #58b2f2;
+}
+
 /* Navbar */
 .navbar-dark {
   background-color: #070b10 !important;
@@ -55,7 +63,6 @@ img.navbar-icon {
 /* Main Container */
 #main-container {
   min-height: 418px;
-  padding-bottom: 40px;
   color: white;
 }
 
@@ -348,6 +355,28 @@ img.ci-infographic {
   100%{
     transform: translateY(0px)
   }
+}
+
+/* Team */
+#team {
+  background-color: #0a0e13;
+}
+
+#team h4 {
+  font-size: 1.1em;
+}
+#team h5 {
+  font-size: 1em;
+}
+
+.team-img {
+  border-radius: 40%;
+}
+
+.linkedin-icon {
+  position: absolute;
+  width: 1.6em;
+  padding-left: 8px;
 }
 
 /* Footer */

@@ -25,7 +25,7 @@
     <div id="app">
 
       <div id="navbar">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img src="logo.svg" alt="" height="60" class="d-inline-block align-text-middle logo">
@@ -47,6 +47,9 @@
                 </li>
                 <li class="nav-item mx-3">
                   <a class="nav-link" href="#roadmap">Roadmap</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#team">Team</a>
                 </li>
                 <li class="nav-item mx-3">
                   <a href="https://github.com/Nion-Network?tab=repositories" target="_blank"><img src="/img/bootstrapicons/github.svg" alt="Github repository" width="24" height="24" class="filter-white navbar-icon"></a>
@@ -82,10 +85,15 @@
                   With a lightweight protocol it aims to build a decentralized and global network for IoT and Edge computing applications, optimising network's resource allocation in a transparent and verifiable way.<br/>
 
                 </p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                   <small class="text-muted">Join our <a href="https://t.me/NionNetwork">telegram channel</a> and contribute to Nion.</small>
                 </div>
               </div>
+
+              <div class="col my-5">
+                <a class="btn btn-outline-info" href="https://docsend.com/view/p4p7635rgu5tqi46" role="button" target="_blank">Nion Network Litepaper v1.0</a>
+              </div>
+
               <div class="overflow-hidden">
                 <div class="container px-1 col-lg-8">
                   <img src="cloud.png" class=" mb-4 ci-infographic img-fluid" alt="Nion Network" loading="lazy">
@@ -269,6 +277,61 @@
 
         </div>
 
+        <div id="team" class="container-fluid py-5">
+
+          <div class="container py-3">
+
+            <div class="px-4 pt-2 my-4 text-center">
+
+              <h2 class="display-5 fw-bold text-center">Team</h2>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 py-4">
+                    <img src="img/team/aleksandar-web.png" height="180" class="py-4 team-img"/>
+                    <h4 class="text-center">ALEKSANDAR TOŠIĆ <a href="https://www.linkedin.com/in/aleksandar-tošić/" target="_blank"><img src="img/LinkedIn_logo_initials.png" class="linkedin-icon"/></a></h4>
+                    <h5 class="text-center text-pink">CEO</h5>
+                    <p>PhD candidate, Entrepreneur, Researcher</p>
+                  </div>
+                  <div class="col-lg-4 py-4">
+                    <img src="img/team/ales-web.png" height="180" class="py-4 team-img"/>
+                    <h4 class="text-center">ALEŠ HORVAT <a href="https://www.linkedin.com/in/ales-horvat/" target="_blank"><img src="img/LinkedIn_logo_initials.png" class="linkedin-icon"/></a></h4>
+                    <h5 class="text-center text-pink">CMO</h5>
+                    <p>BSc in Computer Science, Software analyst, Expertise in Cybersecurity field</p>
+                  </div>
+                  <div class="col-lg-4 py-4">
+                    <img src="img/team/mihael-web.png" height="180" class="py-4 team-img"/>
+                    <h4 class="text-center">MIHAEL BERČIČ <a href="https://www.linkedin.com/in/mihael-bercic/" target="_blank"><img src="img/LinkedIn_logo_initials.png" class="linkedin-icon"/></a></h4>
+                    <h5 class="text-center text-pink">CTO</h5>
+                    <p>Lead developer</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 py-4">
+                    <img src="img/team/domen-web.png" height="180" class="py-4 team-img"/>
+                    <h4 class="text-center">DOMEN VAKE <a href="https://www.linkedin.com/in/VakeDomen" target="_blank"><img src="img/LinkedIn_logo_initials.png" class="linkedin-icon"/></a></h4>
+                    <h5 class="text-center text-pink">Backend developer, network engineer</h5>
+                    <p>PhD candidate, Teaching assistant</p>
+                  </div>
+                  <div class="col-lg-4 py-4">
+                    <img src="img/team/benjamin-web.png" height="180" class="py-4 team-img"/>
+                    <h4 class="text-center">BENJAMIN BOŽIČ <a href="https://www.linkedin.com/in/benjamin-bozic/" target="_blank"><img src="img/LinkedIn_logo_initials.png" class="linkedin-icon"/></a></h4>
+                    <h5 class="text-center text-pink">Front-end developer, mobile developer</h5>
+                    <p>BSc in Bioinformatics</p>
+                  </div>
+                  <div class="col-lg-4 py-4">
+                    <img src="img/team/jernej-web.png" height="180" class="py-4 team-img"/>
+                    <h4 class="text-center">JERNEJ VIČIČ <a href="https://www.linkedin.com/in/jernejvicic/" target="_blank"><img src="img/LinkedIn_logo_initials.png" class="linkedin-icon"/></a></h4>
+                    <h5 class="text-center text-pink">Advisor</h5>
+                    <p>Asoc. prof. at University of Primorska<br/>Head of Blockchain and Language Technologies Lab</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
     </div>
@@ -278,6 +341,10 @@
         <span class="text-muted">© 2021 Nion technology</span>
       </div>
     </footer>
+
+    <script>
+      [...document.getElementsByClassName("nav-item")].forEach( element => {element.onclick = () => {document.getElementById("navbarSupportedContent").classList.remove("show")}} )
+    </script>
 
   </body>
 </html>
