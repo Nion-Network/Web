@@ -5,9 +5,14 @@ body {
 
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   text-align: left;
   color: #28f8f5;
+}
+
+h6 {
+  font-size: 0.9em !important;
+  color: #0dcaf0 !important;
 }
 
 h4 {
@@ -63,7 +68,7 @@ img.navbar-icon {
 /* Main Container */
 #main-container {
   min-height: 418px;
-  color: white;
+  color: rgb(226, 217, 217);
 }
 
 img.ci-infographic {
@@ -80,6 +85,13 @@ img.ci-infographic {
 
 #showcase {
   background-color: #2b384a;
+}
+
+.sect-delimiter {
+  width: 5em;
+  height: 0.2em;
+  background-color: #28f8f5;
+  margin: auto;
 }
 
 /* SVG filter */
@@ -245,14 +257,14 @@ img.ci-infographic {
 /* Grayed out */
 .main-timeline .timeline-gray:before,
 .main-timeline .timeline-gray .timeline-content:before {
-    background-color: #50595d !important;
+    background-color: #dfdfdf !important;
 }
 
 .main-timeline .timeline-gray .timeline-content:after {
-    background: linear-gradient(to left, transparent, #50595d) !important;
+    background: linear-gradient(to left, transparent, #f6fbfe) !important;
 }
 
-.main-timeline .timeline-gray .title { color: #50595d !important; }
+.main-timeline .timeline-gray .title { color: #fff !important; }
 
 @media screen and (max-width:767px){
 
@@ -356,6 +368,37 @@ img.ci-infographic {
     transform: translateY(0px)
   }
 }
+
+/* Articles */
+#articles {
+  background-color: #0a0e13;
+}
+
+#articles .subtitle { text-align: left; }
+
+.card {
+  background-color: initial !important;
+  border: 1px solid #0dcaf0 !important;
+}
+
+/* Research section */
+.research_title { margin-top: 1.2em; }
+
+.research_card { border: 1px solid rgba(209, 69, 213, 0.74) !important; }
+.research_card_title { color: rgba(226, 103, 233, 0.91); }
+.research_card_subtitle { color: #6d9adf !important; }
+.research_card_authors { font-size: 0.9em; }
+.research_card_rm { color: rgb(225, 145, 255); }
+
+.research_card a:hover {
+  text-decoration: none;
+  color: rgba(245, 79, 255, 0.91);
+}
+
+/* Roadmap */
+#roadmap p.description { text-align: left; }
+#roadmap .checkIcon { color: #31f37f; }
+#roadmap .codeIcon { color: rgb(226, 217, 217); }
 
 /* Team */
 #team {
